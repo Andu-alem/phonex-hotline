@@ -8,11 +8,11 @@ export function GameControlBox() {
         <div className="py-2 bg-gradient-to-l from-[#2b3e79] via-[#0f3d8e] to-[#2b3e79] rounded-md">
             <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-2 w-4/5 mx-auto">
                 <div className="bg-[#194eae] shadow shadow-gray-900 px-2 py-1 flex justify-between gap-2 rounded-full">
-                    <div className="flex flex-col text-[9px] font-bold">
+                    <div className="flex flex-col items-center text-[9px] font-bold">
                         <span>Bet USD</span>
                         <span className="text-center bg-[#0f3d8e] rounded-lg border border-gray-900 w-24">0.30</span>
                     </div>
-                    <div className="flex gap-1 py-[5px]">
+                    <div className="flex gap-1 py-[3px]">
                         <button className="rounded-full px-[7px] shadow shadow-gray-900">
                             <img src={minusIcon} alt="minus-icon" className="w-2 h-2" />
                         </button>
