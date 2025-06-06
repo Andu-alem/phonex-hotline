@@ -4,7 +4,7 @@ import redTile from '../assets/red-tile.png'
 
 function Tile({tileColor}:{tileColor: string}) {
     const tileSrc = tileColor === "fire" ? fireTile : tileColor === "black" ? blackTile : redTile
-    return <img src={tileSrc} alt="tile" className="w-10 h-10" />
+    return <img src={tileSrc} alt="tile" className="w-10 h-10 -mx-[1px]" />
 }
 
 export function TileList() {
