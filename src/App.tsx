@@ -1,34 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { TileBox } from './components/tile-box'
+import { HistoryBox } from './components/history-box'
+import { ModeToggler } from './components/mode-toggler'
+import { GameControlBox } from './components/game-control-box'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="w-full sm:w-[70vw] h-[70vh] bg-gradient-to-l from-[#395099] via-[#194eae] to-[#395099] rounded-md pt-7 flex flex-col justify-between gap-3 border-2 border-[#c4872e]">
+      <div className="flex-grow flex flex-col justify-between sm:justify-end sm:gap-4">
+        <HistoryBox />
+        <TileBox />
+        <ModeToggler />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <GameControlBox />
+    </div>
   )
 }
 
